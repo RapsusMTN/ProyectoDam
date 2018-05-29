@@ -263,6 +263,12 @@ public class Principal extends javax.swing.JFrame implements KeyListener, Action
             System.exit(0);
         }
     }
+    
+    public void cambiarFuente() {
+        Color c = JColorChooser.showDialog(this, "Elige el color que quieras: ", Color.yellow);
+        this.jTextArea1.setForeground(c);
+        
+    }//Codigo    añadido para cambiar la fuente,falta añadir el Listener al ItemMenu
 
     @Override
     public void actionPerformed(ActionEvent ae) {
